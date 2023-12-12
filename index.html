@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Controle Finanças</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="headerContainer">
+
+            <label>
+                
+               <p> Control </p> Finance
+
+            </label>
+            
+            <a id="newRegister">Registar novo valor</a>
+            
+        </div>
+        
+    </header>
+    
+    <main>
+
+        <section>
+
+            <h1>Resumo Financeiro</h1>
+
+            <div class="container">
+
+                <div class="buttonsActions">
+
+                    <a href="#">Todos</a>
+                    <a href="#">Entradas</a>
+                    <a href="#">Saídas</a>
+
+                </div>
+
+                <div class="containerCards">
+
+                    <div class="cardSoma">
+                        <h3>Soma dos valores</h3>
+                        <p>R$ 0,00</p>
+                    </div>
+
+                    <div class="cardDespesas">
+                        <h3>R$ 25</h3>
+                        <p>Entrada</p>
+                        <img src="./lixeira.png" alt="Remove">
+                    </div>
+
+                    <div class="cardDespesas">
+                        <h3>R$ 15</h3>
+                        <p>Saida</p>
+                        <img src="./lixeira.png" alt="Remove">
+                    </div>
+
+                </div>
+
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <header class="modal-header">
+                            <h2>Registro de valor</h2>
+                            <span class="modal-close" id="modalClose">&#10006;</span>
+                        </header>
+                        <form class="modal-form">
+                            <h3>Valor</h3>
+                            <input type="number" class="modal-field" placeholder="R$00,00" id="valor">
+                        </form>
+
+
+
+                        <footer class="modal-footer">
+                            <button class="buttonCancel">Cancelar</button>
+                            <button class="buttonSave">Salvar</button>
+                        </footer>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
